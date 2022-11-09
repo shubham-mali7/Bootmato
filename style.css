@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* css reset */
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fbfbfb;
+}
+/* Header section (This section will have background pic ,login and account button)*/
+header {
+  /* border: 3px solid red; */
+  height: 480px;
+  background: transparent linear-gradient(180deg, #9d0e0e00 0%, #4f0707 100%) 0%
+    0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  overflow: hidden;
+}
+header::before {
+  content: "";
+  background: url("home-images/background-img.png") center center/ cover
+    no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 480px;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  opacity: 1;
+  mix-blend-mode: multiply;
+}
+
+#mainhead ul {
+  /* border: 2px solid white; */
+  list-style-type: none;
+  display: flex;
+  padding: 3px 5px;
+  width: 400px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#mainhead ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+#login {
+  margin-right: 20px;
+}
+
+#create {
+  border: 1px solid #ffffff;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+/* Mid section (This section will have logo and search menue ) */
+
+#logo {
+  color: #eb2929;
+  font-size: 70px;
+  font-weight: 600;
+  background-color: #ffffff;
+  width: 147px;
+  height: 147px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 90px;
+}
+.title {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dropdown {
+  /* border: 2px solid yellow; */
+  /* width: 75%; */
+  height: 60px;
+  margin-left: 13%;
+  margin-top: 2%;
+}
+
+select {
+  width: 33%;
+  height: 60px;
+  text-align: center;
+  font-size: 15px;
+}
+#restaurant {
+  width: 47%;
+  margin-left: 2%;
+}
+/* end of header section */
+
+/* Main section(This section will have all boxes) */
+
+#mainsec {
+  /* border: 3px solid darkblue; */
+  /* height: 600px; */
+  margin-top: 2%;
+}
+.quick {
+  color: #192f60;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 2%;
+}
+.sub-quick {
+  color: #8c96ab;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 2%;
+}
+#parent {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.tile-container {
+  width: 30%;
+  height: 160px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  display: inline-block;
+  margin-left: 2%;
+  margin-bottom: 4%;
+}
+
+.component-1 {
+  float: left;
+  width: 50%;
+  height: 160px;
+}
+.component-1 img {
+  width: 100%;
+  height: 100%;
+}
+.component-2 {
+  float: left;
+  width: 45%;
+  margin-left: 4%;
+  margin-top: 8%;
+}
+.component-heading {
+  color: #192f60;
+  font-size: 18px;
+  font-weight: 600;
+}
+.component-sub {
+  color: #8c96ab;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* Utility classes */
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ........Media queries....... */
+@media only screen and (max-width: 990px) {
+  .title {
+    font-size: 28px;
+  }
+  #restaurant {
+    margin-top: 5%;
+    width: 95%;
+  }
+  select {
+    width: 95%;
+    margin-left: 2%;
+  }
+  .dropdown {
+    margin-left: 0%;
+  }
+
+  .quick {
+    font-size: 24px;
+  }
+  .sub-quick {
+    font-size: 14px;
+  }
+  .tile-container {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #logo {
+    font-size: 42px;
+    font-weight: 600;
+    width: 90px;
+    height: 90px;
+  }
+}

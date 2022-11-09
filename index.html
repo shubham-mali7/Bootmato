@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato with HTML CSS and Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Header section (This section will have background pic ,login and account button) -->
+      <header>
+        <div id="mainhead" class="float-end">
+          <ul>
+            <li><a href="#" id="login">LogIn</a></li>
+            <li>
+              <a href="#" id="create">Create an account</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Mid section (This section will have logo and search menue ) -->
+        <div class="container">
+          <div id="logo">e!</div>
+          <div class="title w-auto">Find the best Restaurants in MUMBAI!</div>
+          <div class="dropdown">
+            <select name="location" id="location">
+              <option value="add">Please select a location</option>
+              <option value="one">CSMT</option>
+              <option value="two">Bandra</option>
+              <option value="three">BKC</option>
+              <option value="four">Marine Lines</option>
+              <option value="five">Worli</option>
+              <option value="six">Versova</option>
+            </select>
+            <select name="resto" id="restaurant">
+              <option value="put">Search for restaurants</option>
+              <option value="royal">The Royal Darbar</option>
+              <option value="robin">The Baskin Robbins</option>
+              <option value="tadka">The Maharashtrian Tadka</option>
+              <option value="shantason">Shantasons Corner</option>
+              <option value="shantason">Shalu-The Dhaba</option>
+              <option value="shantason">Modern Pride</option>
+            </select>
+          </div>
+        </div>
+      </header>
+      <!-- end of header section -->
+
+      <!-- Main section (This section will have all boxes) -->
+
+      <div id="mainsec">
+        <div class="container">
+          <div class="quick">Quick Search</div>
+          <div class="sub-quick">Discover Restaurants by type of meal</div>
+          <div id="parent">
+            <div class="tile-container">
+              <div class="component-1">
+                <img src="home-images/idli-break.png" alt="idli-break" />
+              </div>
+              <div class="component-2">
+                <div class="component-heading">Breakfast</div>
+                <div class="component-sub">
+                  Start your day with exclusive breakfast options
+                </div>
+              </div>
+            </div>
+            <div class="tile-container">
+              <div class="component-1">
+                <img src="home-images/shahi-bhojan.png" alt="bhojan" />
+              </div>
+              <div class="component-2">
+                <div class="component-heading">Lunch</div>
+                <div class="component-sub">
+                  Enjoy your day with exclusive Lunch options
+                </div>
+              </div>
+            </div>
+            <div class="tile-container">
+              <div class="component-1">
+                <img
+                  src="home-images/chatpata-samosa.png"
+                  alt="chatpata-samosa"
+                />
+              </div>
+              <div class="component-2">
+                <div class="component-heading">Chatpati</div>
+                <div class="component-sub">
+                  Give a way to your taste buds, Have some Samosa's!
+                </div>
+              </div>
+            </div>
+            <div class="tile-container">
+              <div class="component-1">
+                <img src="home-images/rajma-chawal.png" alt="rajma-chawal" />
+              </div>
+              <div class="component-2">
+                <div class="component-heading">Dinner</div>
+                <div class="component-sub">
+                  Does a day even end without chawal?!
+                </div>
+              </div>
+            </div>
+            <div class="tile-container">
+              <div class="component-1">
+                <img src="home-images/drinks.png" alt="drinks" />
+              </div>
+              <div class="component-2">
+                <div class="component-heading">Drinks</div>
+                <div class="component-sub">
+                  All hard and soft drinks available, Cheers!
+                </div>
+              </div>
+            </div>
+            <div class="tile-container">
+              <div class="component-1">
+                <img src="home-images/night-wolves.png" alt="night-wolves" />
+              </div>
+              <div class="component-2">
+                <div class="component-heading">Nightlife</div>
+                <div class="component-sub">
+                  A Night worth remembering, Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
